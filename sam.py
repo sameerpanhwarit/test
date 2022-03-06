@@ -1,4 +1,5 @@
 from dataclasses import replace
+import requests
 import platform
 import os
 xox = platform.platform()[::-1].replace('.','').replace(' ','').replace('-','').upper()
