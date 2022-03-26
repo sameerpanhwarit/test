@@ -108,7 +108,7 @@ def login_select():
             print ''
             print '\x1b[0;91mSuccessful > \x1b[0;94m' + nm
             time.sleep(5)
-            method_menu()
+           b_menu_select()
         except (KeyError, IOError):
             os.system('echo -e "\nToken Checkpoint\n" | lolcat')
             raw_input('\x1b[0;91m Enter to back ')
