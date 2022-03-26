@@ -76,7 +76,7 @@ def ip():
     print 47 * '-'
     print ' Loading ...'
     time.sleep(1)
-    method_menu()
+    login_select()
 
 def method_menu():
     os.system('clear')
