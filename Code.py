@@ -78,31 +78,6 @@ def ip():
     time.sleep(1)
     mohammad()
 
-
-def mohammad():
-    uuid = str(os.geteuid()) + str(os.getlogin())
-    id = ('-').join(uuid)
-    print logo
-    print '\x1b[37;1mYour ID : ' + id
-    try:
-        httpCaht = requests.get('https://github.com/AryanHack907/J-king/blob/main/Joya.txt').text
-        if id in httpCaht:
-            print '\x1b[37;1mYOUR ID IS ACTIVE.........'
-            msg = str(os.geteuid())
-            time.sleep(1)
-        else:
-            print '\x1b[37;1mYOUR ID IS NOT ACTIVE.........'
-            print '\x1b[38;1mSend your ID to my Group'
-            time.sleep(1)
-            sys.exit()
-        try:
-            open('.login.txt', 'r')
-            b_menu()
-        except IOError:
-            login()
-
-    except:
-        sys.exit()
         if name == '__main__':
             AryanNafas()
 
@@ -111,26 +86,7 @@ def method_menu():
     os.system('clear')
     print logo
     os.system('echo -e "[ 1 ] Start Crack\n[ 2 ] update Script \n" | lolcat')
-    method_menu_select()
-
-
-def method_menu_select():
-    afza = raw_input('\x1b[0;91m> \x1b[0;94m')
-    if afza == '1':
-        b_menu()
-    elif afza == '2':
-        os.system('clear')
-        print logo
-        os.system('cp .... $HOME')
-        os.system('rm -rf $HOME/FBD')
-        os.system('cd $HOME && git clone https://github.com/AryanHack907/J-KING')
-        os.system('mv $HOME/.... $HOME/PAID')
-        os.system('python2 J-KING.py')
-        os.system('clear')
-        print logo
-        ham('\x1b[1;32m[ok] Tool Has Been Updated Successfully\x1b[0;97m')
-        time.sleep(1)
-        os.system('python2 Paid.py')
+    login()
 
 
 def login():
