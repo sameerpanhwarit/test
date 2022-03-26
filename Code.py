@@ -76,11 +76,7 @@ def ip():
     print 47 * '-'
     print ' Loading ...'
     time.sleep(1)
-    mohammad()
-
-        if name == '__main__':
-            AryanNafas()
-
+    method_menu()
 
 def method_menu():
     os.system('clear')
